@@ -11,10 +11,16 @@ a {
     color: inherit;
     text-decoration: none;
 }
+.logo a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2.5px;
+}
 
 
 :root {
     --main-blue: #4f7cff;
+    --main-background: #101522;
 }
 
 /*---------------------------------------*/

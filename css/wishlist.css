@@ -7,8 +7,8 @@
     --black: #18181B;
 
     --heart-default: url("../images/ui/빈 하트.png");
-    --heart-hover: url("../images/ui/빈 하트.png");
-    --heart-on: url("../images/ui/하트.png");
+    --heart-hover: url("../images/ui/하트.png");
+    --heart-on: url("../images/ui/빈 하트.png");
     --heart-on-hover: url("../images/ui/하트.png");
 }
 
@@ -275,22 +275,22 @@ a {
 .wish-icon {
     width: 22px;
     height: 22px;
-    background-image: var(--heart-default);
+    background-image: var(--heart-hover);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .wish-btn:hover .wish-icon {
-    background-image: var(--heart-hover);
+    background-image: var(--heart-default);
 }
 
 .wish-btn.on .wish-icon {
-    background-image: var(--heart-on);
+    background-image: var(--heart-on-hover);
 }
 
 .wish-btn.on:hover .wish-icon {
-    background-image: var(--heart-on-hover);
+    background-image: var(--heart-on);
 }
 
 /* 텍스트 */
@@ -300,7 +300,7 @@ a {
 
 .movie-title {
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 600;
     color: #000;
     letter-spacing: -0.2px;
 }

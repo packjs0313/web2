@@ -73,11 +73,12 @@ body {
 /* 영화 섹션 */
 .movie-section {
 	padding: 70px 10vw;
-	background: rgba(0, 0, 0, 0.6);
+	background: var(--main-background);
 	text-align: center;
 }
 
 .section-title {
+	font-weight: 600;
 	font-size: 35px;
 	margin-bottom: 20px;
 	text-align: left;
@@ -271,7 +272,7 @@ body {
 }
 
 .site-footer {
-	background: rgba(0, 0, 0, 0.75);
+	background: var(--main-background);
 	padding: 90px 10vw 30px;
 }
 
@@ -298,7 +299,7 @@ body {
 .footer-col h4 {
 	font-size: 16px;
 	margin-bottom: 12px;
-	font-weight: 700;
+	font-weight: 800;
 }
 
 .footer-col ul {
@@ -309,8 +310,14 @@ body {
 
 .footer-col li {
 	font-size: 12px;
+	font-weight: 200;
 	color: rgba(255, 255, 255, 0.7);
 	margin-bottom: 6px;
+}
+
+.footer-col li.Inquiry {
+	color: #f5f5f5;
+	font-weight: 200;
 }
 
 .footer-bottom {
