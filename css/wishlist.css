@@ -6,10 +6,10 @@
     --text: #222222;
     --black: #18181B;
 
-    --heart-default: url("../images/ui/빈 하트.png");
-    --heart-hover: url("../images/ui/하트.png");
-    --heart-on: url("../images/ui/빈 하트.png");
-    --heart-on-hover: url("../images/ui/하트.png");
+    --heart-default: url("../images/ui/heart_stroke.png");
+    --heart-hover: url("../images/ui/redheart.png");
+    --heart-on: url("../images/ui/heart_stroke.png");
+    --heart-on-hover: url("../images/ui/redheart.png");
 }
 
 * {
