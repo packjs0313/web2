@@ -1,9 +1,10 @@
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+﻿@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
 body {
 	background: #000;
 	color: #fff;
 	font-family: 'Pretendard';
+	overflow-x: hidden;
 }
 
 /* 검색 영역 */
@@ -36,13 +37,13 @@ body {
 }
 
 .search-section h1 {
-	font-size: 30px;
+	font-size: 1.875rem;
 	letter-spacing: 1.6px;
 	margin-bottom: 3px;
 }
 
 .search-section p {
-	font-size: 20px;
+	font-size: 1.25rem;
 	letter-spacing: 0.5px;
 }
 
@@ -58,7 +59,7 @@ body {
 	padding: 14px;
 	border-radius: 8px 0 0 8px;
 	border: none;
-	font-size: 16px;
+	font-size: 1rem;
 }
 
 .search-box button {
@@ -121,7 +122,7 @@ body {
 	transition: transform 0.6s ease, filter 0.6s ease;
 }
 
-/* Hover 효과 */
+/* 호버 효과 */
 .movie-card:hover {
 	transform: scale(1.03);
 	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
@@ -132,7 +133,7 @@ body {
 	filter: blur(1.5px);
 }
 
-/* Overlay */
+/* 오버레이 */
 .movie-overlay {
 	position: absolute;
 	inset: 0;
@@ -159,18 +160,18 @@ body {
 
 .movie-overlay .rating {
 	color: gold;
-	font-size: 12px;
+	font-size: 0.75rem;
 	margin-bottom: 0.25rem;
 }
 
 .movie-overlay h4 {
 	margin: 0 0 0.25rem 0;
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 0.875rem;
 }
 
 .movie-overlay p {
-	font-size: 12px;
+	font-size: 0.75rem;
 	color: #ccc;
 	margin: 0;
 }
@@ -193,7 +194,7 @@ body {
 	border-radius: 50%;
 
 	color: #fff;
-	font-size: 25px;
+	font-size: 1.5625rem;
 	text-align: center;
 	line-height: 50px;
 
@@ -217,10 +218,10 @@ body {
 
 }
 
-/* RANK 카드 */
+/* 랭크 카드 */
 .rank-card {
     position: relative;
-    overflow: visible !important; /* 숫자는 밖으로 */
+    overflow: visible !important; /* 순위 숫자를 카드 밖으로 노출 */
     transform: none !important;
 	
 }
@@ -230,16 +231,16 @@ body {
     transition: transform 0.6s ease, filter 0.6s ease;
 }
 
-/* 포스터만 잘리게 */
+/* 포스터만 클리핑 */
 .rank-card .poster-wrap {
     position: relative;
     width: 100%;
     height: 100%;
     border-radius: 7%;
-    overflow: hidden; /* 이미지 hover만 자름 */
+    overflow: hidden; /* 이미지 호버가 내부에서만 보이도록 */
 }
 
-/* 랭크 숫자 */
+/* 큰 순위 숫자 */
 .rank-card .rank-num {
     position: absolute;
     left: -20px;
@@ -259,7 +260,7 @@ body {
     filter: none !important;
 }
 
-/* hover 시 숫자만 흐리게 */
+/* 호버 시 순위 숫자 안정화 */
 .rank-card:hover .rank-num {
     opacity: 0.15;
 }
@@ -303,7 +304,7 @@ body {
 }
 
 .footer-brand {
-	font-size: 34px;
+	font-size: 2.125rem;
 	font-weight: 900;
 	letter-spacing: 1px;
 	margin-top: 55px;
@@ -316,7 +317,7 @@ body {
 }
 
 .footer-col h4 {
-	font-size: 16px;
+	font-size: 1rem;
 	margin-bottom: 12px;
 	font-weight: 800;
 }
@@ -328,7 +329,7 @@ body {
 }
 
 .footer-col li {
-	font-size: 12px;
+	font-size: 0.75rem;
 	font-weight: 200;
 	color: rgba(255, 255, 255, 0.7);
 	margin-bottom: 6px;
@@ -351,12 +352,49 @@ body {
 }
 
 .footer-bottom p {
-	font-size: 12px;
+	font-size: 0.75rem;
 	color: rgba(255, 255, 255, 0.6);
 	margin: 6px 0;
 }
 
 .footer-small {
-	font-size: 11px;
+	font-size: 0.6875rem;
 	color: rgba(255, 255, 255, 0.45);
+}
+
+@media (max-width: 768px) {
+	.footer-inner{
+		flex-direction: column;
+	}
+	.footer-cols {
+    	flex-direction: column;
+		gap: 15px;
+	}
+	
+	.search-box input {
+		width: 75vw;
+	}
+
+	/* 모바일에서 화살표 오프셋으로 생기는 가로 스크롤 방지 */
+	.next {
+		width: 2.25rem;
+		height: 2.25rem;
+		line-height: 2.25rem;
+		font-size: 1.125rem;
+	}
+	.next.right {
+		right: -2rem;
+	}
+
+	.next.left {
+		left: -2rem;
+	}
+
+	.movie-card {
+        width: 25%;
+    }
+    .site-footer {
+        background: var(--main-background);
+        padding: 30px 10vw 30px;
+    }
 }

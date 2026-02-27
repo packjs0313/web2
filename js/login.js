@@ -1,7 +1,11 @@
 const API = "http://127.0.0.1:8000";
+const ACCESS_TOKEN_KEY = "access_token";
 
-
-fetch("/api/auth/me", { credentials: "include" })
+const savedToken = localStorage.getItem(ACCESS_TOKEN_KEY);
+fetch(`${API}/api/auth/me`, {
+    credentials: "include",
+    headers: savedToken ? { Authorization: `Bearer ${savedToken}` } : {}
+})
     .then(res => {
         if (res.ok) {
             // 이미 로그인됨
@@ -22,7 +26,7 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
             headers: {
                 "Content-Type": "application/json"
             },
-            credentials: "include", // ⭐ 쿠키 필수
+            credentials: "include",
             body: JSON.stringify({
                 email,
                 password,
@@ -35,10 +39,12 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
             return;
         }
 
-        // 쿠키에 토큰 저장됨 (응답값은 굳이 안 써도 됨)
-        await res.json();
+        const data = await res.json();
+        if (data?.access_token) {
+            localStorage.setItem(ACCESS_TOKEN_KEY, data.access_token);
+        }
 
-        // 로그인 성공 → 메인으로
+        // 로그인 성공 후 메인으로
         location.href = "index.html";
 
     } catch (err) {

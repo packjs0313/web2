@@ -18,7 +18,7 @@ a {
 .logo {
     font-weight: 700;
     color: #fff;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .navbar {
@@ -36,13 +36,13 @@ a {
     background-color: #0a0f1e;
     backdrop-filter: blur(6px);
 
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .logout {
     color: #fff;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .menu {
@@ -84,7 +84,7 @@ a {
 .user-menu a {
     padding: 6px 14px;
     border-radius: 8px;
-    font-size: 15px;
+    font-size: 0.9375rem;
     color: white;
 }
 
@@ -139,7 +139,7 @@ a {
     object-fit: cover;
 }
 
-/* 카드 정보 영역 */
+/* 카드 ?�보 ?�역 */
 .card-info {
     padding: 12px;
 }
@@ -152,28 +152,28 @@ a {
 }
 
 .genre {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: bold;
     color: #4f7cff;
 }
 
 .rating {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #f5b400;
     font-weight: bold;
 }
 
 .title {
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-bottom: 4px;
 }
 
 .date {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #777;
 }
 
-/* 페이지네이션 */
+/* ?�이지?�이??*/
 
 .pagination {
     margin-top: 40px;
@@ -196,7 +196,7 @@ a {
     color: white;
 }
 
-/* 반응형 */
+/* 반응??*/
 
 @media (max-width: 1000px) {
     .movie-grid {
@@ -255,7 +255,7 @@ a {
     width: 25px;
     height: 25px;
 
-    background-image: url("../images/ui/빈 하트.png"); /* 기존 하트 */
+    background-image: url("../images/ui/�??�트.png"); /* 기존 ?�트 */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -268,5 +268,5 @@ a {
 }
 
 .wish-btn.on .wish-icon {
-    background-image: url("../images/ui/하트.png");
+    background-image: url("../images/ui/?�트.png");
 }

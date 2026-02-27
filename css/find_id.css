@@ -37,15 +37,15 @@ Content Card
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-/* 공통 스타일 */
+/* 공통 ?��???*/
 .content {
     display: flex;
     flex-direction: column;
     z-index: 10;
 }
 
-/* PC 화면 
-   화면 너비가 769px 이상일 때 적용.*/
+/* PC ?�면 
+   ?�면 ?�비가 769px ?�상?????�용.*/
 @media screen and (min-width: 769px) {
     .content {
         position: absolute;
@@ -63,15 +63,15 @@ Content Card
     }
 }
 
-/* 모바일 화면 
-   화면 너비가 768px 이하일 때 적용.*/
+/* 모바???�면 
+   ?�면 ?�비가 768px ?�하?????�용.*/
 @media screen and (max-width: 768px) {
     .content {
-        /* 모바일에서는 화면 중앙에 고정하는 대신 적절한 여백을 줌 */
+        /* 모바?�에?�는 ?�면 중앙??고정?�는 ?�???�절???�백??�?*/
         position: relative; 
-        margin: 50px auto; /* 상하 여백 50px, 좌우 자동 중앙 */
-        width: 90%; /* 화면의 90% 차지 */
-        max-width: 400px; /* 아무리 커져도 400px 제한 */
+        margin: 50px auto; /* ?�하 ?�백 50px, 좌우 ?�동 중앙 */
+        width: 90%; /* ?�면??90% 차�? */
+        max-width: 400px; /* ?�무�?커져??400px ?�한 */
         padding: 40px 20px;
         background: #0000007a;
         backdrop-filter: blur(10px);
@@ -86,7 +86,7 @@ Content Card
 Title & Text
 ======================= */
 .content h2 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 700;
     text-align: left;
     margin-bottom: 10px;
@@ -109,12 +109,12 @@ Input
     border: 2px solid rgba(255, 255, 255, 0.2);
     border-radius: 30px;
     padding: 22px 50px 22px 22px;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 input::placeholder {
     color: #ffffff75;
-    font-size: 17px;
+    font-size: 1.0625rem;
 }
 
 .input-box i {
@@ -122,14 +122,14 @@ input::placeholder {
     top: 50%;
     right: 22px;
     transform: translateY(-50%);
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 /* =======================
 Remember
 ======================= */
 .remember {
-    font-size: 15px;
+    font-size: 0.9375rem;
     margin: 40px 0 30px;
 }
 
@@ -148,7 +148,7 @@ Button
     background: #fff;
     color: #0a2862;
     border-radius: 30px;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
     text-align: center;
     cursor: pointer;
@@ -156,7 +156,7 @@ Button
 }
 
 /* =======================
-Input UX 제거
+Input UX ?�거
 ======================= */
 input::-ms-reveal,
 input::-ms-clear {

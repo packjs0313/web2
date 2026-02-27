@@ -19,7 +19,7 @@ a {
     text-decoration: none;
 }
 
-/* ================= 상세 페이지 ================= */
+/* ================= ?�세 ?�이지 ================= */
 .detail {
     padding-top: 140px;
     padding-bottom: 120px;
@@ -54,7 +54,7 @@ a {
 .meta {
     display: flex;
     gap: 12px;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #888;
     letter-spacing: 1.3px;
     text-transform: uppercase;
@@ -62,7 +62,7 @@ a {
 }
 
 .title {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 800;
     margin-bottom: 24px;
 }
@@ -80,11 +80,11 @@ a {
 }
 
 .score strong {
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 .summary h3 {
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-bottom: 30px;
 }
 
@@ -128,7 +128,7 @@ a {
     margin-top: 30px;
 }
 
-/* 리뷰 헤더 */
+/* 리뷰 ?�더 */
 .reviews-header {
     display: flex;
     justify-content: space-between;
@@ -139,17 +139,17 @@ a {
 }
 
 .reviews-header h2 {
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: 800;
 }
 
-/* 리뷰 작성 버튼 */
+/* 리뷰 ?�성 버튼 */
 .btn.write {
     padding: 10px 24px;
     border-radius: 999px;
     background: #4F7CFF;
     color: #fff;
-    font-size: 14px;
+    font-size: 0.875rem;
     letter-spacing: 1.3px;
     border: none;
     cursor: pointer;
@@ -161,7 +161,7 @@ a {
     box-shadow: 0 10px 20px rgba(10, 124, 255, .35);
 }
 
-/* 리뷰 입력 영역 */
+/* 리뷰 ?�력 ?�역 */
 .review-input-wrap {
     position: relative;
     display: flex;
@@ -174,7 +174,7 @@ a {
     padding-left: 58px;
 }
 
-/* 프로필 */
+/* ?�로??*/
 .profile {
     position: absolute;
     display: none;
@@ -189,13 +189,13 @@ a {
     top: 48px;
 }
 
-/* 리뷰 폼 열릴 때 프로필 표시 */
+/* 리뷰 ???�릴 ???�로???�시 */
 .review-form.show~.profile,
 .review-input-wrap:has(.review-form.show) .profile {
     display: block;
 }
 
-/* 리뷰 작성 폼 */
+/* 리뷰 ?�성 ??*/
 .review-form {
     position: relative;
     display: none;
@@ -215,7 +215,7 @@ a {
     flex-direction: column !important;
 }
 
-/* 별점 입력(폼 내부) */
+/* 별점 ?�력(???��?) */
 #review-form .rating-input {
     align-self: flex-end !important;
     width: auto !important;
@@ -225,7 +225,7 @@ a {
     gap: 6px !important;
 }
 
-/* 별점 입력 */
+/* 별점 ?�력 */
 .rating-input {
     display: flex;
     flex-direction: row-reverse;
@@ -239,7 +239,7 @@ a {
 }
 
 .rating-input label {
-    font-size: 26px;
+    font-size: 1.625rem;
     color: #ddd;
     cursor: pointer;
 }
@@ -250,7 +250,7 @@ a {
     color: #f5c542;
 }
 
-/* 리뷰 입력 textarea */
+/* 리뷰 ?�력 textarea */
 .review-form textarea {
     width: 100%;
     background: transparent;
@@ -262,7 +262,7 @@ a {
     line-height: 44px;
     padding: 0 6px;
 
-    font-size: 13px;
+    font-size: 0.8125rem;
     color: #111;
 
     resize: none !important;
@@ -279,7 +279,7 @@ a {
     color: #9a9a9a;
 }
 
-/* 리뷰 폼 버튼 */
+/* 리뷰 ??버튼 */
 .form-actions {
     display: flex;
     justify-content: flex-end;
@@ -291,7 +291,7 @@ a {
     width: 80px;
     padding: 8px 18px;
     border-radius: 999px;
-    font-size: 13px;
+    font-size: 0.8125rem;
     cursor: pointer;
     border: none;
 }
@@ -309,7 +309,7 @@ a {
     color: #fff;
 }
 
-/* 별점 입력(중복 구간) */
+/* 별점 ?�력(중복 구간) */
 .rating-input {
     display: flex;
     flex-direction: row-reverse;
@@ -322,7 +322,7 @@ a {
 }
 
 .rating-input label {
-    font-size: 26px;
+    font-size: 1.625rem;
     color: #ddd;
     cursor: pointer;
 }
@@ -339,7 +339,7 @@ a {
     position: relative;
 }
 
-/* 리뷰 액션(좋아요/싫어요/답글) */
+/* 리뷰 ?�션(좋아???�어???��?) */
 .review .action-row {
     position: absolute;
     right: 0;
@@ -349,7 +349,7 @@ a {
     gap: 18px;
 }
 
-/* 액션 아이콘+숫자 */
+/* ?�션 ?�이�??�자 */
 .review .action-row .action {
     display: flex;
     align-items: center;
@@ -363,18 +363,18 @@ a {
 }
 
 .review .action-row .action span {
-    font-size: 13px;
+    font-size: 0.8125rem;
     line-height: 1;
     display: inline-block;
     transform: translateY(1px);
 }
 
-/* 답글 버튼(리뷰) */
+/* ?��? 버튼(리뷰) */
 .review.has-replies .comment-btn {
     margin-top: 18px;
 }
 
-/* 리뷰 상단(프로필/이름/별점) */
+/* 리뷰 ?�단(?�로???�름/별점) */
 .review-top {
     display: flex;
     align-items: center;
@@ -389,7 +389,7 @@ a {
 }
 
 .review .user {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
 }
 
@@ -400,13 +400,13 @@ a {
 }
 
 .review p {
-    font-size: 15px;
+    font-size: 0.9375rem;
     line-height: 1.7;
     color: #555;
     max-width: 900px;
 }
 
-/* ================= 추천 영화 ================= */
+/* ================= 추천 ?�화 ================= */
 .movie-card {
     position: relative;
     aspect-ratio: 2 / 3;
@@ -464,7 +464,7 @@ a {
 
 .movie-overlay .rating {
     color: gold;
-    font-size: 12px;
+    font-size: 0.75rem;
     margin-bottom: 0.25rem;
 }
 
@@ -472,16 +472,16 @@ a {
     margin: 0 0 0.25rem 0;
     color: #ccc;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .movie-overlay p {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #ccc;
     margin: 0;
 }
 
-/* 오버레이 */
+/* ?�버?�이 */
 .recommend-item::after {
     content: "";
     position: absolute;
@@ -520,7 +520,7 @@ a {
     transform: translateY(0);
 }
 
-/* 추천 영역 */
+/* 추천 ?�역 */
 .recommend {
     max-width: 1200px;
     margin: 160px auto 0;
@@ -585,12 +585,12 @@ a {
 
 .recommend-item h4 {
     bottom: 36px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .recommend-item span {
     bottom: 16px;
-    font-size: 13px;
+    font-size: 0.8125rem;
     color: #ccc;
 }
 
@@ -599,7 +599,7 @@ a {
     opacity: 1;
 }
 
-/* 리뷰 액션(기본) */
+/* 리뷰 ?�션(기본) */
 .review-actions {
     display: flex;
     justify-content: flex-end;
@@ -619,7 +619,7 @@ a {
     height: 16px;
 }
 
-/* ================= 답글 ================= */
+/* ================= ?��? ================= */
 .replies {
     display: none;
     margin-top: 24px;
@@ -642,7 +642,7 @@ a {
 
 .reply-body {
     flex: 1;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #444;
 }
 
@@ -679,28 +679,28 @@ a {
     cursor: pointer;
 }
 
-/* 회전 */
+/* ?�전 */
 .rotate-180 {
     transform: rotate(180deg);
 }
 
-/* 답글 표시(중복 구간) */
+/* ?��? ?�시(중복 구간) */
 .replies {
     display: block;
 }
 
-/* 답글 버튼 텍스트 */
+/* ?��? 버튼 ?�스??*/
 .comment-btn {
     gap: 6px;
-    font-size: 13px;
+    font-size: 0.8125rem;
     color: #777;
 }
 
 .reply-count {
-    font-size: 13px;
+    font-size: 0.8125rem;
 }
 
-/* 답글 영역(중복 구간) */
+/* ?��? ?�역(중복 구간) */
 .replies {
     position: relative;
     top: 100%;
@@ -728,11 +728,11 @@ a {
 
 .reply-body {
     flex: 1;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #444;
 }
 
-/* 리뷰 액션(중복 구간) */
+/* 리뷰 ?�션(중복 구간) */
 .review-actions {
     display: flex;
     flex-direction: column;
@@ -741,7 +741,7 @@ a {
     margin-right: auto;
 }
 
-/* 액션 줄(중복 구간) */
+/* ?�션 �?중복 구간) */
 .action-row {
     display: flex;
     align-items: center;
@@ -806,7 +806,7 @@ a {
 }
 
 .reply-count {
-    font-size: 15px;
+    font-size: 0.9375rem;
     color: #000;
     display: flex;
     font-weight: 700;
@@ -842,7 +842,7 @@ a {
     transform: rotate(360deg);
 }
 
-/* ================= 답글 영역(최종) ================= */
+/* ================= ?��? ?�역(최종) ================= */
 .replies {
     margin-top: 14px;
     padding-left: 56px;
@@ -871,7 +871,7 @@ a {
     border-radius: 0;
 
     padding: 0 6px;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #111;
     outline: none;
 }
@@ -888,7 +888,7 @@ a {
     width: 68px;
     padding: 6px 12px;
     border-radius: 999px;
-    font-size: 12px;
+    font-size: 0.75rem;
     cursor: pointer;
     border: none;
 }
@@ -931,14 +931,14 @@ a {
 
 .replies .reply-user {
     display: block;
-    font-size: 13px;
+    font-size: 0.8125rem;
     font-weight: 700;
     color: #111;
     margin-bottom: 4px;
 }
 
 .replies .reply-body {
-    font-size: 13.5px;
+    font-size: 0.8438rem;
     line-height: 1.6;
     color: #555;
 }
@@ -966,11 +966,11 @@ a {
 }
 
 .replies .reply-actions .action span {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #111;
 }
 
-/* ================= 리뷰 액션(배치) ================= */
+/* ================= 리뷰 ?�션(배치) ================= */
 .review {
     position: relative;
 }
@@ -1010,7 +1010,7 @@ a {
 }
 
 .review-actions .action span {
-    font-size: 13px;
+    font-size: 0.8125rem;
     line-height: 1;
     display: inline-block;
 }
@@ -1031,13 +1031,13 @@ a {
 
 /* view more riview */
 
-/* ================= 리뷰 페이지네이션 ================= */
+/* ================= 리뷰 ?�이지?�이??================= */
 .review-pagination {
     margin-top: 26px;
     display: flex;
     justify-content: center;
     gap: 14px;
-    font-size: 13px;
+    font-size: 0.8125rem;
     color: #111;
 }
 
@@ -1057,7 +1057,7 @@ a {
     background: rgba(0, 0, 0, 0.06);
 }
 
-/* 답글 열렸을 때 구분선 색 */
+/* ?��? ?�렸????구분????*/
 .comment-btn.open::before {
     border-bottom: 1px solid rgba(94, 94, 94, 0.55);
 }

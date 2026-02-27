@@ -18,7 +18,7 @@ a {
 
 
 /* =====================
-   마이페이지 메인 영역
+   마이?�이지 메인 ?�역
 ===================== */
 .container {
     max-width: 900px;
@@ -26,7 +26,7 @@ a {
 }
 
 /* =====================
-   프로필
+   ?�로??
 ===================== */
 .profile {
     text-align: center;
@@ -87,11 +87,11 @@ a {
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    font-size: 12px;
+    font-size: 0.75rem;
 }
 
 /* =====================
-   통계
+   ?�계
 ===================== */
 .stats {
     background: white;
@@ -108,12 +108,12 @@ a {
 
 .stats span {
     display: block;
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #888;
 }
 
 .stats strong {
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 /* =====================
@@ -131,14 +131,14 @@ a {
     margin-bottom: 20px;
 }
 
-/* 리뷰 아이템 수정 */
+/* 리뷰 ?�이???�정 */
 .review-item {
     display: flex;
     align-items: center;
     border-top: 1px solid #eee;
     padding: 16px 0;
     gap: 20px;
-    /* 요소들 사이의 간격을 '고정'시킵니다. 이제 멀어지지 않아요. */
+    /* ?�소???�이??간격??'고정'?�킵?�다. ?�제 멀?��?지 ?�아?? */
 }
 
 .review-item:first-child {
@@ -146,30 +146,30 @@ a {
 }
 
 .review-item p {
-    font-size: 13px;
+    font-size: 0.8125rem;
     color: #555;
     margin-top: 8px;
 }
 
-/* 별점을 오른쪽 끝으로 보내고 싶다면 */
+/* 별점???�른�??�으�?보내�??�다�?*/
 .stars {
     color: #ffb400;
-    font-size: 14px;
+    font-size: 0.875rem;
     margin-left: auto;
     letter-spacing: 2px;
-    /* 이것을 넣으면 평소엔 오른쪽에 붙어 있고, 화면이 줄어도 자연스럽습니다. */
+    /* ?�것???�으�??�소???�른쪽에 붙어 ?�고, ?�면??줄어???�연?�럽?�니?? */
 }
 
-/* 통계 부분 수정 */
+/* ?�계 부�??�정 */
 .stats {
     background: white;
     margin-top: 30px;
     border-radius: 16px;
     display: flex;
     justify-content: center;
-    /* space-around 대신 가운데로 모읍니다. */
+    /* space-around ?�??가?�데�?모읍?�다. */
     gap: 60px;
-    /* 항목 간의 간격을 고정하여 화면이 줄어도 거리가 유지되게 합니다. */
+    /* ??�� 간의 간격??고정?�여 ?�면??줄어??거리가 ?��??�게 ?�니?? */
     padding: 20px 0;
 }
 
@@ -185,7 +185,7 @@ a {
 }
 
 .review-date {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #888;
     margin-top: 4px;
 }
@@ -196,14 +196,14 @@ a {
 }
 
 .review-date {
-    font-size: 10px;
+    font-size: 0.625rem;
     font-weight: 450;
     color: #b4b4b4;
     margin-top: -2px;
 }
 
 /* =====================
-   위시리스트
+   ?�시리스??
 ===================== */
 
 .wishlist {
@@ -218,7 +218,7 @@ a {
 
 .wishlist-head h3 {
     margin: 0 0 14px;
-    font-size: 25x;
+    font-size: 1.5625rem;
     font-weight: 600;
     color: #111;
     display: inline-flex;
@@ -227,13 +227,13 @@ a {
 }
 
 .chev {
-    font-size: 28px;
+    font-size: 1.75rem;
     color: #000000;
     font-weight: 300;
     transform: translateY(-4px);
 }
 
-/* 안내 배너 */
+/* ?�내 배너 */
 .wish-cta {
     background: #F3F4F6;
     border-radius: 16px;
@@ -265,7 +265,7 @@ a {
 
 .wish-icon .heart {
     color: #ff3b5c;
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1;
 }
 
@@ -275,14 +275,14 @@ a {
 
 .wish-text strong {
     display: block;
-    font-size: 13px;
+    font-size: 0.8125rem;
     font-weight: 700;
     color: #111;
     margin-bottom: 4px;
 }
 
 .wish-text p {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #777;
     margin: 0;
     line-height: 1.35;
@@ -296,7 +296,7 @@ a {
     color: #fff;
     border-radius: 10px;
     padding: 10px 14px;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 600;
     display: inline-flex;
     align-items: center;
@@ -305,11 +305,11 @@ a {
 }
 
 .wish-btn span {
-    font-size: 14px;
+    font-size: 0.875rem;
     transform: translateY(-1px);
 }
 
-/* 카드 그리드 */
+/* 카드 그리??*/
 .wish-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -346,7 +346,7 @@ a {
 }
 
 .wish-title {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 700;
     color: #111;
     margin-bottom: 8px;
@@ -360,7 +360,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 11px;
+    font-size: 0.6875rem;
 }
 
 .wish-year {
@@ -378,7 +378,7 @@ a {
 }
 
 /* =====================
-   위시리스트 EMPTY 상태
+   ?�시리스??EMPTY ?�태
 ===================== */
 .wishlist-empty {
     margin-top: 28px;
@@ -422,14 +422,14 @@ a {
 
 .empty-text strong {
     display: block;
-    font-size: 13px;
+    font-size: 0.8125rem;
     font-weight: 700;
     color: #111;
     margin-bottom: 6px;
 }
 
 .empty-text p {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #777;
     line-height: 1.4;
 }
@@ -440,13 +440,13 @@ a {
     border: none;
     border-radius: 10px;
     padding: 10px 16px;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 600;
     cursor: pointer;
     white-space: nowrap;
 }
 
-/* 반응형 */
+/* 반응??*/
 @media (max-width: 900px) {
     .wish-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -482,7 +482,7 @@ a {
 
 
 /* =====================
-    반응형 레이아웃 (반응형 코드)
+    반응???�이?�웃 (반응??코드)
 ===================== */
 
 @media (max-width: 768px) {
